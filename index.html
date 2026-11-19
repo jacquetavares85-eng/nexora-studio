@@ -1,0 +1,553 @@
+<!DOCTYPE html>
+<html lang="fr">
+<head>
+  <meta charset="UTF-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1">
+  <title>NEXORA — Studio digital</title>
+  <style>
+  * {
+    box-sizing: border-box;
+  }
+
+  body {
+    margin: 0;
+    background: #0b0d12;
+    color: #f5f2ed;
+    font-family: Arial, sans-serif;
+    line-height: 1.6;
+  }
+
+  header {
+    display: flex;
+    justify-content: space-between;
+    align-items: center;
+    padding: 24px 7%;
+    border-bottom: 1px solid #292a2e;
+  }
+
+  header strong {
+    color: #f5f2ed;
+    font-size: 25px;
+    letter-spacing: 3px;
+  }
+
+  header strong span,
+  .accueil h1 span {
+    color: #ff7138;
+  }
+
+  header p {
+    color: #b9b7b3;
+  }
+
+  main {
+    width: min(1100px, 86%);
+    margin: auto;
+  }
+
+  .accueil {
+    max-width: 780px;
+    padding: 90px 0 110px;
+  }
+
+  .accueil > p:first-child {
+    color: #ff9a62;
+    letter-spacing: 4px;
+  }
+
+  .accueil h1 {
+    font-size: clamp(52px, 9vw, 100px);
+    line-height: 1;
+  }
+
+  .accueil a,
+  .contact a {
+    display: inline-block;
+    margin: 8px 8px 8px 0;
+    padding: 13px 20px;
+    border-radius: 8px;
+    background: #ff7138;
+    color: #171717;
+    font-weight: bold;
+    text-decoration: none;
+  }
+.accueil > p:not(:first-child),
+header p,
+.services article p,
+.projets article p,
+.contact > p:last-of-type {
+  color: #b8b8bd;
+}
+
+.services,
+.projets,
+.contact {
+  padding: 65px 0;
+  border-top: 1px solid #292a2e;
+}
+
+.services > p:first-child,
+.projets > p:first-child,
+.contact > p:first-child {
+  color: #ff9a62;
+  letter-spacing: 3px;
+}
+
+.services h2,
+.projets h2,
+.contact h2 {
+  font-size: clamp(32px, 5vw, 54px);
+  line-height: 1.15;
+}
+
+.services article,
+.projets article {
+  margin: 16px 0;
+  padding: 24px;
+  border: 1px solid #343238;
+  border-radius: 14px;
+  background: #14171d;
+}
+
+.services article h3,
+.projets article h3 {
+  color: #ff9a62;
+}
+body {
+  background: #ffffff;
+  color: #202124;
+}
+
+header {
+  border-bottom-color: #e6e8eb;
+}
+
+header strong {
+  color: #202124;
+}
+
+header p,
+.accueil > p:not(:first-child),
+.services article p,
+.projets article p,
+.contact > p:last-of-type {
+  color: #5f6368;
+}
+
+.services,
+.projets,
+.contact {
+  border-top-color: #e6e8eb;
+}
+
+.services article,
+.projets article {
+  background: #f8f9fb;
+  border-color: #e2e5e9;
+  box-shadow: 0 10px 30px rgba(20, 26, 38, 0.05);
+}
+
+.services h2,
+.projets h2,
+.contact h2 {
+  color: #202124;
+}
+nav {
+  display: flex;
+  gap: 28px;
+}
+
+nav a {
+  color: #34363b;
+  font-weight: bold;
+  text-decoration: none;
+}
+
+nav a:hover {
+  color: #ff7138;
+}
+
+@media (max-width: 700px) {
+  header {
+    flex-wrap: wrap;
+    gap: 10px;
+  }
+
+  header nav {
+    width: 100%;
+    justify-content: space-between;
+    gap: 12px;
+  }
+}
+.services {
+  display: grid;
+  grid-template-columns: repeat(3, minmax(0, 1fr));
+  gap: 18px;
+}
+
+.projets {
+  display: grid;
+  grid-template-columns: repeat(2, minmax(0, 1fr));
+  gap: 18px;
+}
+
+.services > p:first-child,
+.services > h2,
+.projets > p:first-child,
+.projets > h2 {
+  grid-column: 1 / -1;
+}
+
+.services article,
+.projets article {
+  margin: 0;
+  transition: transform 0.2s ease;
+}
+
+.services article:hover,
+.projets article:hover {
+  transform: translateY(-4px);
+}
+
+@media (max-width: 700px) {
+  .services,
+  .projets {
+    grid-template-columns: 1fr;
+  }
+}
+.accueil {
+  min-height: 68vh;
+  display: flex;
+  flex-direction: column;
+  justify-content: center;
+  align-items: flex-start;
+}
+
+.accueil h1 {
+  margin: 22px 0;
+  letter-spacing: -3px;
+}
+
+.accueil > p:nth-of-type(2) {
+  max-width: 650px;
+  font-size: 20px;
+  line-height: 1.8;
+}
+
+.accueil a {
+  margin-top: 24px;
+  box-shadow: 0 8px 22px rgba(255, 113, 56, 0.2);
+}
+
+.contact {
+  padding: 45px;
+  border: 1px solid #e2e5e9;
+  border-radius: 18px;
+  background: #f8f9fb;
+}
+
+footer {
+  margin-top: 45px;
+  padding: 25px 7%;
+  border-top: 1px solid #e6e8eb;
+  color: #5f6368;
+  text-align: center;
+}
+
+@media (max-width: 700px) {
+  .accueil {
+    min-height: auto;
+    padding: 65px 0;
+  }
+
+  .accueil h1 {
+    letter-spacing: -1px;
+  }
+
+  .contact {
+    padding: 28px 20px;
+  }
+}
+html {
+  scroll-behavior: smooth;
+}
+
+section[id] {
+  scroll-margin-top: 24px;
+}
+.accueil a,
+.contact a,
+.services article,
+.projets article {
+  transition: transform 0.2s ease, box-shadow 0.2s ease;
+}
+
+.accueil a:hover,
+.contact a:hover {
+  transform: translateY(-3px);
+  box-shadow: 0 12px 26px rgba(255, 113, 56, 0.28);
+}
+
+a:focus-visible {
+  outline: 3px solid #202124;
+  outline-offset: 4px;
+}
+.apropos {
+  margin: 40px 0;
+  padding: 40px;
+  border: 1px solid #e2e5e9;
+  border-radius: 18px;
+  background: #f8f9fb;
+}
+
+.apropos > p:first-child {
+  color: #ff7138;
+  letter-spacing: 3px;
+}
+
+.apropos h2 {
+  color: #202124;
+  font-size: clamp(32px, 5vw, 50px);
+  line-height: 1.15;
+}
+
+.apropos > p:last-child {
+  max-width: 750px;
+  color: #5f6368;
+  font-size: 18px;
+  line-height: 1.8;
+}
+
+nav {
+  flex-wrap: wrap;
+}
+.image-projet {
+  width: 100%;
+  height: 180px;
+  margin: 12px 0;
+  border-radius: 10px;
+  object-fit: cover;
+}
+.projets article a {
+  color: #e85d2a;
+  font-weight: bold;
+  text-decoration: none;
+}
+
+.projets article a:hover {
+  text-decoration: underline;
+}
+header strong {
+  display: inline-flex;
+  align-items: center;
+  min-height: 64px;
+  padding-left: 0;
+  background-image: none;
+}
+
+header strong::before {
+  content: "";
+  flex: 0 0 64px;
+  height: 64px;
+  margin-right: 12px;
+  background: url("./download.svg") center / contain no-repeat;
+}
+.accueil {
+  display: grid;
+  grid-template-columns: minmax(0, 1.2fr) minmax(280px, 0.8fr);
+  align-items: center;
+  gap: 40px;
+  max-width: none;
+  min-height: 68vh;
+}
+
+.accueil-contenu > p:first-child {
+  color: #ff9a62;
+  letter-spacing: 4px;
+}
+
+.accueil-contenu > p:nth-of-type(2) {
+  max-width: 650px;
+  color: #5f6368;
+  font-size: 20px;
+  line-height: 1.8;
+}
+
+.accueil-visuel {
+  justify-self: end;
+  width: min(100%, 420px);
+}
+
+.accueil-visuel img {
+  display: block;
+  width: 100%;
+  border-radius: 24px;
+  box-shadow: 0 20px 60px rgba(255, 113, 56, 0.16);
+}
+
+@media (max-width: 700px) {
+  .accueil {
+    grid-template-columns: 1fr;
+    gap: 30px;
+    min-height: auto;
+  }
+
+  .accueil-visuel {
+    justify-self: center;
+    width: min(80vw, 360px);
+  }
+}
+.accueil {
+  display: grid;
+  grid-template-columns: minmax(0, 1.15fr) minmax(280px, 0.85fr);
+  align-items: center;
+  gap: 40px;
+  max-width: none;
+  min-height: 68vh;
+  padding: 50px 0;
+}
+
+.accueil-contenu {
+  min-width: 0;
+}
+
+.accueil-contenu > p:first-child {
+  color: #ff9a62;
+  letter-spacing: 3px;
+}
+
+.accueil h1 {
+  margin: 22px 0;
+  font-size: clamp(46px, 5.5vw, 76px);
+  line-height: 1.05;
+  letter-spacing: -2px;
+}
+
+.accueil-contenu > p:nth-of-type(2) {
+  max-width: 620px;
+  color: #5f6368;
+  font-size: 19px;
+  line-height: 1.7;
+}
+
+.accueil-visuel {
+  width: min(100%, 420px);
+  justify-self: end;
+}
+
+.accueil-visuel img {
+  display: block;
+  width: 100%;
+  border-radius: 24px;
+  box-shadow: 0 20px 60px rgba(255, 113, 56, 0.16);
+}
+
+@media (max-width: 700px) {
+  .accueil {
+    grid-template-columns: 1fr;
+    gap: 28px;
+    min-height: auto;
+  }
+
+  .accueil h1 {
+    font-size: clamp(42px, 11vw, 58px);
+    letter-spacing: -1px;
+  }
+
+  .accueil-visuel {
+    width: min(78vw, 320px);
+    justify-self: center;
+  }
+}
+</style>
+</head>
+<body>
+<header>
+  <strong>NEXORA<span>.</span></strong>
+  <p>Studio digital · Sénégal</p>
+  <nav aria-label="Menu principal">
+    <a href="#accueil">Accueil</a>
+  <a href="#services">Services</a>
+  <a href="#projets">Projets</a>
+  <a href="#apropos">À propos</a>
+  <a href="#contact">Contact</a>
+</nav>
+</header>
+
+<main>
+<section class="accueil" id="accueil">
+  <div class="accueil-contenu">
+    <p>STUDIO DIGITAL INDÉPENDANT · SÉNÉGAL</p>
+
+    <h1>Votre marque mérite<br><span>une présence forte.</span></h1>
+
+    <p>Je conçois des sites web, des identités visuelles et des catalogues numériques pour aider les petites entreprises à présenter leur activité avec clarté et impact.</p>
+
+    <a href="#contact">Discutons de votre projet</a>
+  </div>
+
+  <div class="accueil-visuel">
+    <img src="download.svg" alt="Logo NEXORA Studio Digital">
+  </div>
+</section>
+  <section class="services" id="services">
+  <p>MES SERVICES</p>
+  <h2>Des solutions numériques pensées pour votre activité.</h2>
+
+  <article>
+    <h3>Sites web vitrines</h3>
+    <p>Des sites adaptés aux téléphones pour présenter vos services, inspirer confiance et faciliter les prises de contact.</p>
+  </article>
+
+  <article>
+    <h3>Identité visuelle</h3>
+    <p>Un univers graphique cohérent pour rendre votre marque reconnaissable sur votre site et vos réseaux.</p>
+  </article>
+
+  <article>
+    <h3>Catalogues numériques</h3>
+    <p>Une présentation claire de vos produits, avec photos, caractéristiques et accès direct à votre contact WhatsApp.</p>
+  </article>
+</section>
+<section class="projets" id="projets">
+  <p>QUELQUES EXEMPLES</p>
+  <h2>Nos projets de pratique</h2>
+
+  <article>
+    <p>Projet personnel</p>
+    <h3>Salon Awa</h3>
+    <a href="photo.png" target="_blank" rel="noopener">Voir la photo du site</a>
+    <p>Un site vitrine pour présenter les services, les tarifs et les coordonnées d’un salon.</p>
+  </article>
+
+  <article>
+    <p>Projet personnel</p>
+    <h3>Bakugo Fan Site</h3>
+    <p>Un site avec galerie d’images, vidéos, histoire et quiz interactif.</p>
+  <a href="https://jacquetavares85-eng.github.io/bakugo-fan-site/" target="_blank" rel="noopener">
+  Voir le site
+</a>
+</article>
+</section>
+<section class="apropos" id="apropos">
+  <p>À PROPOS DU STUDIO</p>
+  <h2>Un projet suivi par son créateur.</h2>
+  <p>Je suis le fondateur de NEXORA Studio Digital. Je conçois et réalise personnellement les maquettes et les sites présentés ici, avec une attention particulière au design et à l’affichage sur téléphone.</p>
+</section>
+<section class="contact" id="contact">
+  <p>UN PROJET EN TÊTE ?</p>
+  <h2>Construisons votre présence en ligne.</h2>
+  <p>Présentez-nous votre besoin : nous chercherons une solution adaptée à votre activité.</p>
+
+  <p>+221 71 127 69 62</p>
+
+  <a href="https://wa.me/221711276962">Écrire sur WhatsApp</a>
+  <a href="tel:+221711276962">Appeler</a>
+  <a href="sms:+221711276962">Envoyer un SMS</a>
+</section>
+</main>
+<footer>
+  <p>© NEXORA Studio Digital · Site créé par son fondateur.</p>
+</footer>
+</body>
+</html>

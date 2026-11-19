@@ -1,0 +1,15 @@
+<svg xmlns="http://www.w3.org/2000/svg" viewBox="0 0 1000 1000" role="img" aria-labelledby="title desc">
+  <title id="title">NEXORA — Studio digital</title>
+  <desc id="desc">Emblème géométrique orange et ivoire sur fond noir graphite pour une marque de services numériques.</desc>
+  <defs>
+    <linearGradient id="bg" x1="0" y1="0" x2="1" y2="1"><stop offset="0" stop-color="#171a20"/><stop offset="1" stop-color="#08090c"/></linearGradient>
+    <linearGradient id="accent" x1="0" y1="0" x2="1" y2="1"><stop offset="0" stop-color="#ffad4d"/><stop offset="1" stop-color="#ff542f"/></linearGradient>
+  </defs>
+  <rect width="1000" height="1000" rx="190" fill="url(#bg)"/>
+  <path d="M180 240h640M180 760h640" stroke="#fff" stroke-opacity=".12" stroke-width="3"/>
+  <path d="M285 610V390l220 220V390M715 390H570v95h125v95H570" fill="none" stroke="#f6f3ed" stroke-width="38" stroke-linecap="square" stroke-linejoin="miter"/>
+  <path d="M505 610l210-220" fill="none" stroke="url(#accent)" stroke-width="42" stroke-linecap="square"/>
+  <path d="M180 240h160" stroke="url(#accent)" stroke-width="12"/>
+  <text x="500" y="710" text-anchor="middle" font-family="Arial, Helvetica, sans-serif" font-size="68" font-weight="800" letter-spacing="14" fill="#f6f3ed">NEXORA</text>
+  <text x="500" y="830" text-anchor="middle" font-family="Arial, Helvetica, sans-serif" font-size="30" font-weight="600" letter-spacing="10" fill="#ff9a4a">STUDIO DIGITAL</text>
+</svg>
